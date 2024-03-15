@@ -7,10 +7,6 @@ import Header from "@/components/Header";
 import CSVImporter from "@/components/CSVImporter";
 
 export default async function Index() {
-    const handleDataImport = (data: string[]) => {
-        console.log("Datos importados:", data);
-    };
-
     const canInitSupabaseClient = () => {
         // This function is just for the interactive tutorial.
         // Feel free to remove it once you have Supabase connected.
@@ -33,7 +29,7 @@ export default async function Index() {
                 </div>
             </nav>
             <div>
-                <CSVImporter/>
+                <CSVImporter />
             </div>
         </div>
     );
